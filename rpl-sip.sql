@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 11, 2017 at 04:30 PM
--- Server version: 10.1.21-MariaDB
+-- Generation Time: 11 Mei 2017 pada 17.23
+-- Versi Server: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `barang`
+-- Struktur dari tabel `barang`
 --
 
 CREATE TABLE `barang` (
@@ -37,7 +37,7 @@ CREATE TABLE `barang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kat_barang`
+-- Struktur dari tabel `kat_barang`
 --
 
 CREATE TABLE `kat_barang` (
@@ -49,20 +49,21 @@ CREATE TABLE `kat_barang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `list_barang`
+-- Struktur dari tabel `list_barang`
 --
 
 CREATE TABLE `list_barang` (
   `id` int(11) NOT NULL,
   `id_barang` int(11) NOT NULL,
   `id_toko` int(11) NOT NULL,
-  `harga` int(11) NOT NULL
+  `harga` int(11) NOT NULL,
+  `banyak` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `toko`
+-- Struktur dari tabel `toko`
 --
 
 CREATE TABLE `toko` (

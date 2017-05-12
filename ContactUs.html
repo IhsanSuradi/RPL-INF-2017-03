@@ -3,7 +3,7 @@
     <head>
 
         <!-- /.website title -->
-        <title>WELCOME</title>
+        <title>Contact Us</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <!-- CSS Files -->
@@ -24,7 +24,6 @@
 
         <!-- Google Fonts -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
-
     </head>
 
     <body data-spy="scroll" data-target="#navbar-scroll">
@@ -34,79 +33,73 @@
         <div id="top"></div>
 
         <!-- /.parallax full screen background image -->
-        <div class="fullscreen landing parallax" style="background-image:url('images/bg.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100">
+        <div class="fullscreen landing parallax" style="background-image:url('images/HNCK3991.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100">
 
             <div class="overlay">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-10 col-md-offset-1 text-center">
 
                             <!-- /.logo -->
-                            <div class="logo wow fadeInDown"> <a href=""><img src="images/logo.png" alt="logo" width="320" height="259"></a> 
-                              <form action="" method="get"><input type="text" size="80" placeholder="Cari Disini ..."><input type="button" value="CARI">
-						  </form></div>
-							
+                            <div class="logo wow fadeInDown"> <a href=""><img src="images/logo.png" alt="logo"></a></div>
 
                             <!-- /.main title -->
                             <h1 class="wow fadeInLeft">
-                                Sistem Informasi Pasar
+                                Contact Us !
                             </h1>
 
                             <!-- /.header paragraph -->
-                            <div class="landing-text wow fadeInUp">
-                                <p>Sistem Informasi Pasar (SIP) Merupakan Sebuah Sistem Yang Dikembangkan Oleh Dinas Perdagangan, Sistem Ini Akan Sangat Bermanfaat Bagi Masyarakat. Cari Belanjaan Anda Disini Dengan Mudah.
-								Jika Anda Pedagang Yang Telah Terdaftar, Silahkan Sign In Untuk Melanjutkan.</p>
+                            <div class="landing-text wow fadeInLeft">
+                                <p>Jika Anda mengalami banyak kendala dalam penggunaan Sistem Informasi Pasar, Silahkan hubungi kami...</p>
                             </div>				  
+							<!-- /.address and contact -->
+                            <div class="col-sm-5 contact-left wow fadeInUp">
+                                <h2><span class="highlight">Sistem</span> Informasi Pasar</h2>
+                                <ul class="ul-address">
+                                    <li><i class="pe-7s-map-marker"></i>Jalan Penayoeng, Daerah Pasar Aceh</br>
+                                       
+                                    </li>
+                                    <li><i class="pe-7s-phone"></i>+62 823 6412 6452</br>
+                                     
+                                    </li>
+                                    <li><i class="pe-7s-mail"></i><a href="mailto:info@yoursite.com">sip@yahoo.com</a></li>
+                                    <li><i class="pe-7s-look"></i><a href="#">www.sip.com</a></li>
+                                </ul>	
 
-                            <!-- /.header button -->
-                            <div class="head-btn wow fadeInLeft">
-                                <a href="#feature" class="btn-primary">Cara Penggunaan</a>
-                                <a href="#download" class="btn-default">Contact Us</a>
                             </div>
-
-
-
-                        </div> 
-
-                        <!-- /.signup form -->
-                        <div class="col-md-5">
-
-                            <div class="signup-header wow fadeInUp">
-                                <h3 class="form-title text-center">MASUK SEBAGAI PEDAGANG</h3>
-                                <form class="form-header" action="" role="form" method="POST" id="#">
-                                    <input type="hidden" name="u" value="503bdae81fde8612ff4944435">
-                                    <input type="hidden" name="id" value="bfdba52708">
+                           
+                            <!-- /.contact form -->
+                            <div class="col-sm-7 contact-right">
+                                <form method="POST" id="contact-form" class="form-horizontal" action="contactengine.php" onSubmit="alert( 'Thank you for your feedback!' );">
                                     <div class="form-group">
-                                        <input class="form-control input-lg" name="MERGE1" id="name" type="text" placeholder="User Name" required>
+                                        <input type="text" name="Name" id="Name" class="form-control wow fadeInUp" placeholder="Nama" required/>
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control input-lg" name="MERGE0" id="email" type="password" placeholder="Password" required>
+                                        <input type="text" name="Email" id="Email" class="form-control wow fadeInUp" placeholder="Email" required/>
+                                    </div>					
+                                    <div class="form-group">
+                                        <textarea name="Message" rows="20" cols="20" id="Message" class="form-control input-message wow fadeInUp"  placeholder="Pesan" required></textarea>
                                     </div>
-                                    <div class="form-group last">
-                                        <input type="submit" class="btn btn-warning btn-block btn-lg" value="SIGN IN">
+                                    <div class="form-group">
+                                        <input type="submit" name="submit" value="SEND" class="btn btn-success wow fadeInUp" />
                                     </div>
-                                    <p class="privacy text-center">Anda Belum Terdaftar ? Silahkan Hubungi Dinas Perdagangan.</p>
-                                </form>
-                            </div>				
-
+                                </form>		
+                            </div>
                         </div>
                     </div>
-                </div> 
-            </div> 
+                </div>
+            </div>
         </div>
-
-       
-                          
 
         <!-- /.footer -->
         <footer id="footer">
             <div class="container">
                 <div class="col-sm-4 col-sm-offset-4">
-                    
+                   
                     <div class="text-center wow fadeInUp" style="font-size: 14px;">
-                      <p>Copyright Dinas Perdagangan 2017 - SIP</p>
+					<p>Copyright Dinas Perdagangan 2017 - SIP</p>
                       <p><a href="" target="_blank">About Us</a></p>
-                    </div>
+					</div>
                     <a href="#" class="scrollToTop"><i class="pe-7s-up-arrow pe-va"></i></a>
                 </div>	
             </div>	

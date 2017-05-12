@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 11 Mei 2017 pada 17.32
+-- Generation Time: 12 Mei 2017 pada 05.57
 -- Versi Server: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -49,10 +49,10 @@ CREATE TABLE `kat_barang` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ke`
+-- Struktur dari tabel `keranjang`
 --
 
-CREATE TABLE `ke` (
+CREATE TABLE `keranjang` (
   `id` int(11) NOT NULL,
   `id_list` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -101,9 +101,9 @@ ALTER TABLE `kat_barang`
   ADD PRIMARY KEY (`id_kat`);
 
 --
--- Indexes for table `ke`
+-- Indexes for table `keranjang`
 --
-ALTER TABLE `ke`
+ALTER TABLE `keranjang`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -133,9 +133,9 @@ ALTER TABLE `barang`
 ALTER TABLE `kat_barang`
   MODIFY `id_kat` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `ke`
+-- AUTO_INCREMENT for table `keranjang`
 --
-ALTER TABLE `ke`
+ALTER TABLE `keranjang`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `list_barang`

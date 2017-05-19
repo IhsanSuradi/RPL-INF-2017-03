@@ -43,8 +43,11 @@
 
                             <!-- /.logo -->
                             <div class="logo wow fadeInDown"> <a href=""><img src="images/logo.png" alt="logo" width="320" height="259"></a> 
-                              <form action="" method="get"><input type="text" size="80" placeholder="Cari Disini ..."><input type="button" value="CARI">
-						  </form></div>
+                              <form action="infobarang.php" method="get">
+								<input type="text" name="q" size="80" placeholder="Cari Disini ...">
+								<input type="button" value="CARI">
+							  </form>
+							</div>
 							
 
                             <!-- /.main title -->

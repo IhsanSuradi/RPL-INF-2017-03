@@ -6,12 +6,12 @@ $password= "";
 $dbname = "rpl";
 
 //buat koneksi
-$koneksidb = new mysqli($servername, $username, $password, $dbname);
+$dbconn = new mysqli($servername, $username, $password, $dbname);
 
 //cek koneksi
-if($koneksidb->connect_error)
+if($dbconn->connect_error)
 {
-	die("Koneksi gagal :(" . $conn->connect_error);
+	die("Koneksi gagal :(" . $dbconn->connect_error);
 	
 }
 

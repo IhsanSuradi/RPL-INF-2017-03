@@ -30,6 +30,7 @@
 				session_destroy();
 				die("Session security check error!");
 			}
+			$uss_result = mysqli_query($dbconn, "UPDATE u_session SET last_access=now() WHERE id=$uid;");
 		}
 		else {
 			session_destroy();

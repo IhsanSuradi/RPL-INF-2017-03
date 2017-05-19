@@ -22,19 +22,21 @@
 						$harga = $row_lsb["harga"];
 						$banyak = $row_lsb["banyak"];
 						
+						// Query tabel toko untuk menampilkan data toko
 						$toko_result = mysqli_query($dbconn, "SELECT * FROM toko WHERE id=$id_toko;");
 						if (mysqli_num_rows($toko_result) > 0){
 							$row_toko = mysqli_fetch_assoc($toko_result);
 							$nama_toko = $row_toko["nama"];
 							$status_toko = $row_toko["status"];
-							if ($status_toko == 0){
-								$status_str = "TUTUP";
+							if ($status_toko != 0){
+								$status_str = "BUKA";
 							}
 							else {
-								$status_str = "BUKA";
+								$status_str = "TUTUP";
 							}
 						}
 						else {
+							// kalo seandainya toko tidak ada, buat value defaultnya
 							$nama_toko = "<unknown>";
 							$status_str = "TUTUP";
 						}
@@ -43,8 +45,13 @@
 						echo "<tr>";
                         echo "<td>$nama_barang</td>";
                         echo "<td>$nama_toko</td>";
-                        echo "<td class=\"text-center\"><strong>$banyak</strong></td>";
-                        echo "<td class=\"text-center\"><strong>Rp. $harga <input type=\"submit\" name=\"Submit2\" value=\"PILIH\" align=\"right\"></strong></td>";
+                        echo "<td class=\"text-center\"><strong>$banyak Kg</strong></td>";
+                        echo "<td class=\"text-center\"><strong>Rp. $harga,-";
+						echo "<form action=\"add_keranjang.php\" method=\"POST\">";
+						echo "<input type=\"hidden\" name=\"id\" value=\"$id_barang\">";
+						echo "<input type=\"hidden\" name=\"origin\" value=\"infobarang.php?q=$qsrc\">";
+						echo "<input type=\"submit\" name=\"Submit2\" value=\"PILIH\" align=\"right\">";
+						echo "</form></strong></td>";
                         echo "<td class=\"active\"><input type=\"submit\" name=\"Submit2\" value=\"$status_str\" align=\"right\"></td>";
                         echo "</tr>";
 						

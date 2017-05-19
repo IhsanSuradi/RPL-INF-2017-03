@@ -1,6 +1,9 @@
-<?php // buat koneksi sebelum load halaman
+<?php
+
 	include "koneksi.php";
-	?>
+	include "init_session.php";
+
+?>
 <!DOCTYPE html>
 <html>
     <head>

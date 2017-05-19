@@ -37,9 +37,9 @@
                     echo "<td class=\"text-center\"><strong>$banyak Kg</strong></td>";
                     echo "<td class=\"text-center\"><strong>Rp. $harga,-";
 					echo "<form action=\"del_keranjang.php\" method=\"POST\">";
-					echo "<input type=\"hidden\" name=\"id\" value=\"$id_barang\">";
+					echo "<input type=\"hidden\" name=\"id\" value=\"$id_list\">";
 					echo "<input type=\"hidden\" name=\"origin\" value=\"keranjang.php\">";
-					echo "<input type=\"submit\" name=\"Submit2\" value=\"PILIH\" align=\"right\">";
+					echo "<input type=\"submit\" name=\"Submit2\" value=\"HAPUS\" align=\"right\">";
 					echo "</tr>";
 				}
 			}

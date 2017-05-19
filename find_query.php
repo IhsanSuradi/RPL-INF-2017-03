@@ -18,6 +18,7 @@
 				if (mysqli_num_rows($lsb_result) > 0){
 					while ($row_lsb = mysqli_fetch_assoc($lsb_result)){
 						
+						$id_list = $row_lsb["id"];
 						$id_toko = $row_lsb["id_toko"];
 						$harga = $row_lsb["harga"];
 						$banyak = $row_lsb["banyak"];
@@ -48,7 +49,7 @@
                         echo "<td class=\"text-center\"><strong>$banyak Kg</strong></td>";
                         echo "<td class=\"text-center\"><strong>Rp. $harga,-";
 						echo "<form action=\"add_keranjang.php\" method=\"POST\">";
-						echo "<input type=\"hidden\" name=\"id\" value=\"$id_barang\">";
+						echo "<input type=\"hidden\" name=\"id\" value=\"$id_list\">";
 						echo "<input type=\"hidden\" name=\"origin\" value=\"infobarang.php?q=$qsrc\">";
 						echo "<input type=\"submit\" name=\"Submit2\" value=\"PILIH\" align=\"right\">";
 						echo "</form></strong></td>";
